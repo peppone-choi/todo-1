@@ -1,0 +1,65 @@
+.TodoContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: start;
+  padding: 2rem;
+  min-width: 50rem;
+  max-width: 50rem;
+  background-color: #f9f9f9;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  .CompleteCheckbox {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+  }
+  .Checked {
+    display: flex;
+    background-color: green;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  .TodoContent {
+    flex-grow: 1;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  .Completed {
+    text-decoration: line-through;
+    color: #999;
+  }
+  .TodoButtons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: start;
+    .EditButton {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      background-color: blue;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .DeleteButton {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      background-color: red;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+  }
+}

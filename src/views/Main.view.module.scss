@@ -1,0 +1,48 @@
+.MainWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  .MainTitle {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .TodoWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .InputWrapper {
+    width: 50rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    .InputField {
+      flex-grow: 1;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .AddButton {
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: #555;
+      }
+    }
+  }
+}
